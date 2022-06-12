@@ -28,3 +28,11 @@ Meanwhile, logically identifying anomalies of each data trends, and alerting det
 Analyzing detected anomalies up to every possible point and it will provide detailed reports with the findings relative to the incident. Then it passes to respective operation team to investigate and take actions over the incident. 
 
 Currently the program handles up to 3 levels of post execution tasks based on the findings of each level. 
+
+   
+
+# Logical Analysis and guide to smart workflow over RPA 
+
+After identifying an anomaly, we were keen to take one step ahead to the analysis and take actions as an RPA process. 
+
+This PRA execution in each 3 level will cover all possible causes which lead to have any drop or hike in CDR and File flows. 
