@@ -29,7 +29,7 @@ Analyzing detected anomalies up to every possible point and it will provide deta
 
 Currently the program handles up to 3 levels of post execution tasks based on the findings of each level. 
 
-![image](https://user-images.githubusercontent.com/9928449/173234310-8b68e683-0a59-4681-9835-1603d93aea6a.png)
+![image](https://user-images.githubusercontent.com/9928449/173234436-fd20174b-02ce-463e-a4b0-037e35ec735c.png)
 
 # Logical Analysis and guide to smart workflow over RPA 
 
