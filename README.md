@@ -11,7 +11,7 @@ In addition, the program will also initiate RPA executions up on the anomaly det
 
 This covers twenty-eight anomaly detection points across the systems, and hundred and seven actions against the detected anomalies over RPA process, as well as 28 daily dashboard views. 
 
-# Design
+## Design
 
 Get thorough understanding of what need to be covered up from the business perspective. 
 
@@ -31,7 +31,7 @@ Currently the program handles up to 3 levels of post execution tasks based on th
 
 ![image](https://user-images.githubusercontent.com/9928449/173234472-1dd7272d-c1dc-43bd-a700-8dd73697c491.png)
 
-# Logical Analysis and guide to smart workflow over RPA 
+## Logical Analysis and guide to smart workflow over RPA 
 
 After identifying an anomaly, we were keen to take one step ahead to the analysis and take actions as an RPA process. 
 
