@@ -13,10 +13,6 @@ import openpyxl
 import os
 import ntpath
 
-## DB Connection
-dsn_tns = cx_Oracle.makedsn('pdcex-scan.dc.dialog.lk', '1521', service_name='ICT') 
-conn = cx_Oracle.connect(user='ictprdi', password='ictprdi', dsn=dsn_tns) 
-
 c = conn.cursor()
 
 ### ************ Reading the Sql Scripts to get data ************ ###
