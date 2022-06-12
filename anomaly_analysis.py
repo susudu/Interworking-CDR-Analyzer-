@@ -11,9 +11,6 @@ import os
 import datetime
 import paramiko
 
-dsn_tns = cx_Oracle.makedsn('pdcex-scan.dc.dialog.lk', '1521', service_name='ICT') 
-conn2 = cx_Oracle.connect(user='ictprdi', password='ictprdi', dsn=dsn_tns) 
-
 con2 = conn2.cursor()
 
 def report_dumps(sql_toread,idx_col,save_to,name_as):
@@ -70,10 +67,6 @@ def nodedrop_error_analysing(node_name):
 def ict_pricing_check():
        
     try:
-        host = "172.26.86.149"
-        port = 22
-        username = "ictprd"
-        password = "M@y2022DAP"
 
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -173,10 +166,6 @@ def erroranomly_analysing():
 
 def file_rejection_checking():
     try:
-        host = "172.26.86.149"
-        port = 22
-        username = "ictprd"
-        password = "M@y2022DAP"
 
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
