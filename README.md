@@ -11,7 +11,7 @@ In addition, the program will also initiate RPA executions up on the anomaly det
 
 This covers twenty-eight anomaly detection points across the systems, and hundred and seven actions against the detected anomalies over RPA process, as well as 28 daily dashboard views. 
 
-# Design. 
+# Design
 
 Get thorough understanding of what need to be covered up from the business perspective. 
 
