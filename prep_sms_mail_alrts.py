@@ -7,9 +7,6 @@
 import cx_Oracle
 import datetime 
 
-dsn_tns = cx_Oracle.makedsn('172.26.79.27', '1521', service_name='cam')
-conn1 = cx_Oracle.connect(user='cbso_bill', password='rbmbill5522', dsn=dsn_tns)
-
 con = conn1.cursor()
 
 
@@ -24,9 +21,9 @@ def send_sms_mailalert(obj_name,event_date,actual_value,lowerlim_value,upperlim_
     msg_txt = 'Abnormal Behaviour in '+obj_name+' \nDate: '+event_date+' \nReceived Count: '+act_val+'\nPredicted Range: '+low_val+' - '+up_val
     msg_date = datetime.datetime.now().date()
     
-    msg_values = [('VAS SMS','777694232', msg_txt,'N',msg_date),
-                 ('VAS SMS','777333310', msg_txt,'N',msg_date),
-                 ('VAS SMS','777338024', msg_txt,'N',msg_date)]
+    msg_values = [('VAS SMS','123456789', msg_txt,'N',msg_date),
+                 ('VAS SMS','234567891', msg_txt,'N',msg_date),
+                 ('VAS SMS','345678912', msg_txt,'N',msg_date)]
     
     insert_stmt = """INSERT INTO API.KEY_SMS_MESSAGE_LIST_HP (MODULE_ID,PHONE_NO,MESSAGE,READ,ACTION_DATE) VALUES (:1, :2, :3, :4, :5)"""
     con.executemany(insert_stmt, msg_values)
