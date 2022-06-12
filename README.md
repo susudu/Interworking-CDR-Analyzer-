@@ -37,5 +37,6 @@ After identifying an anomaly, we were keen to take one step ahead to the analysi
 
 This PRA execution in each 3 level will cover all possible causes which lead to have any drop or hike in CDR and File flows.
 
-![image](https://user-images.githubusercontent.com/9928449/173234594-01c38a6c-800a-4915-a428-4e97d28a9935.png)
+![image](https://user-images.githubusercontent.com/9928449/173234631-0fa97ca7-963b-469d-a42b-9417dddf0b15.png)
+
 
