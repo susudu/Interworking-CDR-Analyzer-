@@ -35,4 +35,7 @@ Currently the program handles up to 3 levels of post execution tasks based on th
 
 After identifying an anomaly, we were keen to take one step ahead to the analysis and take actions as an RPA process. 
 
-This PRA execution in each 3 level will cover all possible causes which lead to have any drop or hike in CDR and File flows. 
+This PRA execution in each 3 level will cover all possible causes which lead to have any drop or hike in CDR and File flows.
+
+![image](https://user-images.githubusercontent.com/9928449/173234594-01c38a6c-800a-4915-a428-4e97d28a9935.png)
+
