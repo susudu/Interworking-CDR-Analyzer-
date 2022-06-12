@@ -1,4 +1,4 @@
-# Interworking_CDR_Analyzer
+# Interworking CDR Analyzer
 This solution covers the CDR volume trend views, its detection of anomalies in input CDR and File level in Wholesale Business using arima model. 
 
 The solution includes daily monthly, and yearly views of related business CDR trends. 
