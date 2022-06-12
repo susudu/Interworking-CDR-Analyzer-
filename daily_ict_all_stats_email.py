@@ -97,16 +97,16 @@ def mailer(mail_subject=None,mbody_txtf_path=None,plot_dir=None,rep_dir=None,str
 
         ## ************************************ Email parameters ******************************************* ##
     if strm_name == 'IDD & Transit Voice':
-        mail.To = 'InterconnectOperations@dialog.lk;janaka.madhawa@dialog.lk'
+        mail.To = 'abc@sample.lk;def@sample.lk'
         
     elif strm_name == 'INT SMS A2P-P2P':
-        mail.To = 'InterconnectOperations@dialog.lk;sampath.vithanage@dialog.lk'
+        mail.To = 'abc@sample.lk;def@sample.lk'
         
     elif strm_name == 'BULK SMS':
-        mail.To = 'InterconnectOperations@dialog.lk;ajith.gamage@dialog.lk;manori.desilva@dialog.lk'
+        mail.To = 'abc@sample.lk;def@sample.lk'
         
     else:
-        mail.To = 'InterconnectOperations@dialog.lk'
+        mail.To = 'abc@sample.lk'
     
     regex=' - ALERT'
     
@@ -132,7 +132,7 @@ def mailer(mail_subject=None,mbody_txtf_path=None,plot_dir=None,rep_dir=None,str
     else:
         mail.Subject = incident_number + mail_subject + today_date
         
-    mail.CC = 'Vindhya.Dissanayake@dialog.lk'
+    mail.CC = 'abc@sample.lk'
 
     fig_ids = []
     def image_embedded():
@@ -181,9 +181,6 @@ def raise_jirareq(jira_summary,jira_desc):
     jira_desc = (soup.get_text()).rsplit("\n",3)[0]
     jira_desc = jira_desc.replace("\n","\\n").replace("\r","\\r")
 
-    auth_user = "Interconnect_ops"
-    auth_pass = "Dialog@123"     
-    url       = "https://support.dialog.lk/rest/servicedeskapi/request"
 
     # Set issue fields in python dictionary
     data = """
@@ -223,8 +220,7 @@ def med_mailer(mail_subject=None,mbody_txtf_path=None):
     today_date = datetime.date.today().strftime("%d-%b-%Y")
 
         ## ************************************ Email parameters ******************************************* ##
-    mail.To = 'InterconnectOperations@dialog.lk'
-    #mail.To = 'asela@dialog.lk;ganganath.amarawickrama@dialog.lk;gajan.sangarappillai@dialog.lk;nuwan.ushantha@dialog.lk;vindhya.dissanayake@dialog.lk'
+    mail.To = 'abc@sample.lk'
     
     if not mail_subject :
         mail.Subject = ref_number + ' - Second Level Analysis : ICT Node CDR Anomaly | ' + today_date
@@ -240,7 +236,7 @@ def med_mailer(mail_subject=None,mbody_txtf_path=None):
         mail.Subject = incident_number + mail_subject + today_date
     jira_summary = mail.Subject
         
-    mail.CC = 'Vindhya.Dissanayake@dialog.lk'
+    mail.CC = 'def@sample.lk'
  
         ## Text Content to be wrote in the mail body    
     html_url= open(mbody_txtf_path,encoding='utf8')
@@ -255,41 +251,6 @@ def med_mailer(mail_subject=None,mbody_txtf_path=None):
     
     if mail_subject == alrt_frej_msubject:
         raise_jirareq(jira_summary,jira_desc)
-    
-# def frge_mailer(mail_subject,mbody_txtf_path):
-    
-#     ## ********* creating the mail object ********** ##
-#     #olMailItem = 0x0
-#     outlook = win32com.client.Dispatch('outlook.application')
-#     mail = outlook.CreateItem(0)
-#     #mail = outlook.CreateItem(olMailItem)
-    
-#     today_date = datetime.date.today().strftime("%d-%b-%Y")
-    
-#     ## Randomly generate the incident number ##
-#     def id_generator(size=6, chars=string.digits):
-#         in_number = ''.join(random.choice(chars) for _ in range(size))
-#         return 'IN'+in_number
-        
-#     incident_number = id_generator()
-
-#         ## ************************************ Email parameters ******************************************* ##
-        
-#     mail.To = 'InterconnectOperations@dialog.lk'
-#     #mail.To = 'asela@dialog.lk;ganganath.amarawickrama@dialog.lk;gajan.sangarappillai@dialog.lk;nuwan.ushantha@dialog.lk;vindhya.dissanayake@dialog.lk'
-
-#     mail.Subject = incident_number + mail_subject + today_date
-        
-#     #mail.CC = 'InterconnectOperations@dialog.lk'
-    
-#     ## Text Content to be wrote in the mail body    
-#     html_url= open(mbody_txtf_path,encoding='utf8')
-#     data=html_url.read() 
   
-#     mail.HTMLBody = data
-#     mail.Categories='Red category'
-#     mail.Save()
-  
-#     mail.Send()
     
 
